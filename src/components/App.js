@@ -8,6 +8,11 @@ import Usuario from "./Usuario";
 
 export default function App() {
     return (
-        <NavBar />
+
+        <div>
+            <NavBar />
+            <Corpo />
+        </div>
+        
     )
 }
