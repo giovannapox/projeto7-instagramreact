@@ -24,14 +24,13 @@ export default function Usuario() {
 
     return (
         <div class="usuario">
-            <img onClick={trocarFoto} src={img} alt="imagem de perfil" />
+            <img data-test="profile-image" onClick={trocarFoto} src={img} alt="imagem de perfil" />
             <div class="texto">
                 <span>
-                    <strong>{nomeDoUsuario}</strong>
-                    <ion-icon onClick={trocarNome} name="pencil"></ion-icon>
+                    <strong data-test="name">{nomeDoUsuario}</strong>
+                    <ion-icon data-test="edit-name" onClick={trocarNome} name="pencil"></ion-icon>
                 </span>
             </div>
         </div>
     )
 }
-// (condição) ? true : false

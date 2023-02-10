@@ -308,3 +308,15 @@ ion-icon {
 .usuario img{
   border-radius: 50%;
 }
+
+.escondido{
+  display: none;
+}
+
+.vermelho{
+  color: red;
+}
+
+.inicial{
+  display: initial;
+}
