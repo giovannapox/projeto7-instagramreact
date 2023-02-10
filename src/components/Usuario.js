@@ -9,7 +9,7 @@ export default function Usuario() {
         if(novaImg === null || novaImg === ""){
             setImg(img)
         } else {
-        setNomeDoUsuario(novaImg);
+        setImg(novaImg);
         }
     }
 
