@@ -8,8 +8,8 @@ const post = [
 
 export default function Posts() {
     return (
-        <div class="posts">
-            {post.map((p) => <Post username={p.username} icone={p.icone} imgPost={p.imgPost} descricao={p.descricao} iconCurtido={p.iconCurtido} curtidoPor={p.curtidoPor} />)}
+        <div className="posts">
+            {post.map((p) => <Post key={p.username} username={p.username} icone={p.icone} imgPost={p.imgPost} descricao={p.descricao} iconCurtido={p.iconCurtido} curtidoPor={p.curtidoPor} />)}
         </div>
     )
 }
