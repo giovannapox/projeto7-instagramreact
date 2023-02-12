@@ -4,7 +4,7 @@ export default function Post (props) {
     const [salvarPost, setSalvarPost] = useState("bookmark-outline")
     const [curtirPost, setCurtirPost] = useState("heart-outline")
     const [cor, setCor] = useState("")
-    const [contador, setContador] = useState(101523)
+    const [contador, setContador] = useState(Number(props.curtidas))
 
     function curtir (){
         if(curtirPost === "heart-outline" && cor === ""){
